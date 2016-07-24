@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :osx
   s.ios.deployment_target = '7.0'
-  s.osx.deployment_target = '10.9'
+  s.osx.deployment_target = '10.7'
   s.source       = { :git => 'https://github.com/sebyddd/NSGIF.git', :tag => "#{s.version}" }
   s.source_files  = "NSGIF/*.{h,m}"
 
