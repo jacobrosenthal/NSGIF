@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B129C4C1FCBDCE100365B8D /* NSGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B129C4A1FCBDCE100365B8D /* NSGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B129C4F1FCBDCE100365B8D /* NSGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B129C481FCBDCE100365B8D /* NSGIF.framework */; };
+		5B129C501FCBDCE100365B8D /* NSGIF.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B129C481FCBDCE100365B8D /* NSGIF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A2069F11B9D0AEE00E886E8 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A2069F01B9D0AEE00E886E8 /* video.mp4 */; };
 		9A2069F21B9D0AEE00E886E8 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9A2069F01B9D0AEE00E886E8 /* video.mp4 */; };
 		9A2069F61B9D138500E886E8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A2069F51B9D138500E886E8 /* WebKit.framework */; };
@@ -28,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5B129C4D1FCBDCE100365B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A7C0A2C1B9262A800556C5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B129C471FCBDCE100365B8D;
+			remoteInfo = NSGIF;
+		};
 		9A7C0A4E1B9262A800556C5A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9A7C0A2C1B9262A800556C5A /* Project object */;
@@ -44,10 +54,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5B129C541FCBDCE100365B8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B129C501FCBDCE100365B8D /* NSGIF.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5B129C481FCBDCE100365B8D /* NSGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B129C4A1FCBDCE100365B8D /* NSGIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSGIF.h; sourceTree = "<group>"; };
+		5B129C4B1FCBDCE100365B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A2069F01B9D0AEE00E886E8 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		9A2069F51B9D138500E886E8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		9A7C0A341B9262A800556C5A /* NSGIF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSGIF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7C0A341B9262A800556C5A /* NSGIF-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSGIF-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7C0A381B9262A800556C5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A7C0A391B9262A800556C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A7C0A3B1B9262A800556C5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +104,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5B129C441FCBDCE100365B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A7C0A311B9262A800556C5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B129C4F1FCBDCE100365B8D /* NSGIF.framework in Frameworks */,
 				9A2069F61B9D138500E886E8 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +144,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B129C491FCBDCE100365B8D /* NSGIF */ = {
+			isa = PBXGroup;
+			children = (
+				5B129C4A1FCBDCE100365B8D /* NSGIF.h */,
+				5B129C4B1FCBDCE100365B8D /* Info.plist */,
+			);
+			path = NSGIF;
+			sourceTree = "<group>";
+		};
 		9A7C0A2B1B9262A800556C5A = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +163,7 @@
 				9A7C0A501B9262A800556C5A /* NSGIFTests */,
 				9AF9B7E61B9C769C00016854 /* NSGIF-OSX */,
 				9AF9B7FD1B9C769C00016854 /* NSGIF-OSXTests */,
+				5B129C491FCBDCE100365B8D /* NSGIF */,
 				9A7C0A351B9262A800556C5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,10 +171,11 @@
 		9A7C0A351B9262A800556C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A7C0A341B9262A800556C5A /* NSGIF.app */,
+				9A7C0A341B9262A800556C5A /* NSGIF-IOS.app */,
 				9A7C0A4D1B9262A800556C5A /* NSGIFTests.xctest */,
 				9AF9B7E51B9C769C00016854 /* NSGIF-OSX.app */,
 				9AF9B7FA1B9C769C00016854 /* NSGIF-OSXTests.xctest */,
+				5B129C481FCBDCE100365B8D /* NSGIF.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,10 +264,39 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5B129C451FCBDCE100365B8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B129C4C1FCBDCE100365B8D /* NSGIF.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		9A7C0A331B9262A800556C5A /* NSGIF */ = {
+		5B129C471FCBDCE100365B8D /* NSGIF */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A7C0A571B9262A800556C5A /* Build configuration list for PBXNativeTarget "NSGIF" */;
+			buildConfigurationList = 5B129C511FCBDCE100365B8D /* Build configuration list for PBXNativeTarget "NSGIF" */;
+			buildPhases = (
+				5B129C431FCBDCE100365B8D /* Sources */,
+				5B129C441FCBDCE100365B8D /* Frameworks */,
+				5B129C451FCBDCE100365B8D /* Headers */,
+				5B129C461FCBDCE100365B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NSGIF;
+			productName = NSGIF;
+			productReference = 5B129C481FCBDCE100365B8D /* NSGIF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9A7C0A331B9262A800556C5A /* NSGIF-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A7C0A571B9262A800556C5A /* Build configuration list for PBXNativeTarget "NSGIF-IOS" */;
 			buildPhases = (
 				9A7C0A301B9262A800556C5A /* Sources */,
 				9A7C0A311B9262A800556C5A /* Frameworks */,
@@ -231,9 +306,9 @@
 			);
 			dependencies = (
 			);
-			name = NSGIF;
+			name = "NSGIF-IOS";
 			productName = NSGIF;
-			productReference = 9A7C0A341B9262A800556C5A /* NSGIF.app */;
+			productReference = 9A7C0A341B9262A800556C5A /* NSGIF-IOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9A7C0A4C1B9262A800556C5A /* NSGIFTests */ = {
@@ -261,10 +336,12 @@
 				9AF9B7E11B9C769C00016854 /* Sources */,
 				9AF9B7E21B9C769C00016854 /* Frameworks */,
 				9AF9B7E31B9C769C00016854 /* Resources */,
+				5B129C541FCBDCE100365B8D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B129C4E1FCBDCE100365B8D /* PBXTargetDependency */,
 			);
 			name = "NSGIF-OSX";
 			productName = "NSGIF-OSX";
@@ -298,6 +375,10 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Sebastian Dobrincu";
 				TargetAttributes = {
+					5B129C471FCBDCE100365B8D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					9A7C0A331B9262A800556C5A = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -327,15 +408,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A7C0A331B9262A800556C5A /* NSGIF */,
+				9A7C0A331B9262A800556C5A /* NSGIF-IOS */,
 				9A7C0A4C1B9262A800556C5A /* NSGIFTests */,
 				9AF9B7E41B9C769C00016854 /* NSGIF-OSX */,
 				9AF9B7F91B9C769C00016854 /* NSGIF-OSXTests */,
+				5B129C471FCBDCE100365B8D /* NSGIF */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5B129C461FCBDCE100365B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A7C0A321B9262A800556C5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,6 +463,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5B129C431FCBDCE100365B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9A7C0A301B9262A800556C5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,9 +511,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5B129C4E1FCBDCE100365B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B129C471FCBDCE100365B8D /* NSGIF */;
+			targetProxy = 5B129C4D1FCBDCE100365B8D /* PBXContainerItemProxy */;
+		};
 		9A7C0A4F1B9262A800556C5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9A7C0A331B9262A800556C5A /* NSGIF */;
+			target = 9A7C0A331B9262A800556C5A /* NSGIF-IOS */;
 			targetProxy = 9A7C0A4E1B9262A800556C5A /* PBXContainerItemProxy */;
 		};
 		9AF9B7FC1B9C769C00016854 /* PBXTargetDependency */ = {
@@ -455,6 +556,91 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5B129C521FCBDCE100365B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NSGIF/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = augmentous.NSGIF;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B129C531FCBDCE100365B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NSGIF/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = augmentous.NSGIF;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9A7C0A551B9262A800556C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -668,6 +854,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5B129C511FCBDCE100365B8D /* Build configuration list for PBXNativeTarget "NSGIF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B129C521FCBDCE100365B8D /* Debug */,
+				5B129C531FCBDCE100365B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9A7C0A2F1B9262A800556C5A /* Build configuration list for PBXProject "NSGIF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -677,7 +872,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A7C0A571B9262A800556C5A /* Build configuration list for PBXNativeTarget "NSGIF" */ = {
+		9A7C0A571B9262A800556C5A /* Build configuration list for PBXNativeTarget "NSGIF-IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A7C0A581B9262A800556C5A /* Debug */,
